@@ -1,4 +1,5 @@
 .container{
+
   background-color: #eee;
 }
 .swiper{
@@ -31,6 +32,11 @@ swiper-item image{
 .navIcon text{
   font-size: 26rpx;
 }
-.banner{
-  
+.banner {
+  width: 100%;
+  height: 100%;
+}
+.banner image{
+   width: 100%;
+   height: 200rpx;
 }

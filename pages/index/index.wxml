@@ -59,9 +59,9 @@
        
     </view>
     <view class="banner">
-      banner
+      <image src="../../static/images/banner1.jpg" mode=""/>
     </view>
     <view class="goodsList">
-      goodsList
+        <goodsList></goodsList>
     </view>
 </view>

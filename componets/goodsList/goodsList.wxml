@@ -1,0 +1,15 @@
+<view class="goodsList">
+     <view class="goods-title">
+        猜你喜欢
+     </view>  
+     <view class="goodsCard">
+      <goodsCard></goodsCard>
+      <goodsCard></goodsCard>
+      <goodsCard></goodsCard>
+      <goodsCard></goodsCard>
+     </view>
+      
+       <view class="more">
+             查看更多
+       </view>
+</view>
