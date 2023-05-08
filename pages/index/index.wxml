@@ -1,4 +1,27 @@
 <!--index.wxml-->
 <view class="container">
- 
+    <view class="swiper">
+        <swiper indicator-dots 	indicator-active-color="red" 	indicator-color="#fff" 	interval="2000" autoplay circular>
+        <block>
+            <swiper-item>
+            <image src="../../static/images/banner1.jpg" mode=""/>
+            </swiper-item>
+            <swiper-item>
+            <image src="../../static/images/banner1.jpg" mode=""/>
+            </swiper-item>
+            <swiper-item>
+            <image src="../../static/images/banner1.jpg" mode=""/>
+            </swiper-item>
+          </block>
+        </swiper>
+    </view> 
+    <view class="navList"> 
+      navList
+    </view>
+    <view class="banner">
+      banner
+    </view>
+    <view class="goodsList">
+      goodsList
+    </view>
 </view>
