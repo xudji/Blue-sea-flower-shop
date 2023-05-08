@@ -2,16 +2,11 @@
 <view class="container">
     <view class="swiper">
         <swiper indicator-dots 	indicator-active-color="red" 	indicator-color="#fff" 	interval="2000" autoplay circular>
-        <block>
+        <block wx:for="{{bannerList}}" wx:key="id">
             <swiper-item>
-            <image src="../../static/images/banner1.jpg" mode=""/>
+            <image src="{{item.imageUrl}}" mode=""/>
             </swiper-item>
-            <swiper-item>
-            <image src="../../static/images/banner1.jpg" mode=""/>
-            </swiper-item>
-            <swiper-item>
-            <image src="../../static/images/banner1.jpg" mode=""/>
-            </swiper-item>
+            
           </block>
         </swiper>
     </view> 

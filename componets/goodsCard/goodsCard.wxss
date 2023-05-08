@@ -12,13 +12,34 @@
 }
 
 .goods-content{
-  padding: 20rpx;
+  padding: 0rpx 20rpx 20rpx 20rpx;
 }
 
 .goods-bar{
   display: flex;
   justify-content: space-between;
-  
+  align-items: center;
+}
+
+.goods-title{
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.goods-dec{
+  font-size: 26rpx;
+  color: #999;
+}
+
+.goods-price{
+  display: flex;
+   font-size: 28rpx;
+}
+.current-price{
+   margin-right: 28rpx;
+}
+.origin-price{
+   text-decoration: line-through;
+   color: rgb(109, 109, 109);
 }
 .goods-cate{
   width: 44rpx;

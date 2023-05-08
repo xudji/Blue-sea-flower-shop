@@ -6,15 +6,15 @@
   </view>
   <view class="goods-content"> 
       <view class="goods-title">
-           爱的诺言爱的诺言爱
+           爱的诺言爱的诺言爱的诺言爱
       </view>
       <view class="goods-dec">
-    岁数大但是v范德萨VS的
+    岁数大但是v范德萨VS的v范德萨VS的
       </view>
       <view class="goods-bar">
          <view class="goods-price">
-              <text>￥ 2639</text>
-              <text>￥ 2939</text>
+              <text class="current-price">￥ 2639</text>
+              <text class="origin-price">￥ 2939</text>
          </view>
          <view class="goods-cate">
              <image src="https://img02.hua.com/m/home/img/home_buy_btn.png" mode=""/>
