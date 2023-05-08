@@ -16,7 +16,47 @@
         </swiper>
     </view> 
     <view class="navList"> 
-      navList
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+         <view class="navIcon">
+             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
+             <text>鲜花玫瑰</text>
+         </view>
+       
     </view>
     <view class="banner">
       banner

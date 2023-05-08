@@ -1,3 +1,6 @@
+.container{
+  background-color: #eee;
+}
 .swiper{
   width: 100%;
   height: 100%;
@@ -5,4 +8,29 @@
 swiper-item image{
   width: 100%;
   height: 100%;
+}
+.navList{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  
+  
+}
+.navIcon{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin:10rpx 0rpx;
+}
+.navIcon image{
+  width: 88rpx;
+  height: 88rpx;  
+}
+.navIcon text{
+  font-size: 26rpx;
+}
+.banner{
+  
 }
