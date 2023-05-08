@@ -11,4 +11,7 @@ export const findCategory1Api = () => {
 }
 
 // 商品数据
-
+export const findListGoodsApi = () => {
+  return request({
+   url:'/mall-api/index/findListGoods'})
+}

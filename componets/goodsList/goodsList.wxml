@@ -1,12 +1,9 @@
 <view class="goodsList">
      <view class="goods-title">
-        猜你喜欢
+        {{title}}
      </view>  
      <view class="goodsCard">
-      <goodsCard></goodsCard>
-      <goodsCard></goodsCard>
-      <goodsCard></goodsCard>
-      <goodsCard></goodsCard>
+      <goodsCard wx:for="{{goodsList}}" wx:key="id" goodsInfo="{{item}}"  goodsInfo="{{item}}"></goodsCard>
      </view>
       
        <view class="more">

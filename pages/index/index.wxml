@@ -23,6 +23,6 @@
       <image src="../../static/images/banner1.jpg" mode=""/>
     </view>
     <view class="goodsList">
-        <goodsList></goodsList>
+        <goodsList title="猜你喜欢" goodsList="{{goodsList}}"></goodsList>
     </view>
 </view>

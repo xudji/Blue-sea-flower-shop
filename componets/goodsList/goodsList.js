@@ -4,7 +4,16 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    goodsList:{
+      type:Array,
+      require:true,
+      default:[]
+    },
+    title:{
+      type:String,
+      require:true,
+      default:''
+    }
   },
 
   /**
