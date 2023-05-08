@@ -11,46 +11,12 @@
         </swiper>
     </view> 
     <view class="navList"> 
+    <block wx:for="{{navList}}" wx:key="id" wx:for-index="index" >
          <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
+          <image class="{{index > 4 ? 'small' : ''}}"   src="{{item.imageUrl}}" mode=""/>
+             <text>{{item.name}}</text>
          </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
-         <view class="navIcon">
-             <image src="../../static/tabbar/home-icon1-1.png" mode=""/>
-             <text>鲜花玫瑰</text>
-         </view>
+        </block>
        
     </view>
     <view class="banner">
