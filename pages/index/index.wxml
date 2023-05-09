@@ -20,9 +20,10 @@
        
     </view>
     <view class="banner">
-      <image src="../../static/images/banner1.jpg" mode=""/>
+      <image src="{{backgroundImg}}" mode=""/>
     </view>
     <view class="goodsList">
         <goodsList title="猜你喜欢" goodsList="{{goodsList}}"></goodsList>
+        <goodsList title="人气推荐" goodsList="{{recommendGoods}}"></goodsList>
     </view>
 </view>

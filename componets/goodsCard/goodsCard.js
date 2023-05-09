@@ -7,7 +7,8 @@ Component({
     goodsInfo:{
       type:Object,
       default:{}
-    }
+    },
+   
   },
 
   /**

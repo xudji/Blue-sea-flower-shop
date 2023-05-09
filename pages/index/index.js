@@ -1,20 +1,23 @@
 // index.js
 // 获取应用实例
-import {findBannerApi,findCategory1Api,findListGoodsApi} from '../../api/api'
-
+import {findBannerApi,findCategory1Api,findListGoodsApi,findRecommendGoodsApi} from '../../utils/api'
+import {backgroundImg} from '../../mock/swiper'
 const app = getApp()
 
 Page({
   data: {
     bannerList:[],
     navList:[],
-    goodsList:[]
+    goodsList:[],
+    recommendGoods:[],
+    backgroundImg: backgroundImg, // 活动海报
   },
  
   onLoad() {
     this.getFindBanner()
     this.getFindCategory1() 
     this.getFindListGoods()
+    this.getFindRecommendGoods()
   },
   async getFindBanner(){
    const res = await findBannerApi()
@@ -30,9 +33,15 @@ Page({
   },
   async getFindListGoods(){
     const res =  await findListGoodsApi()
-    console.log(res.data)
     this.setData({
       goodsList:res.data
+    })
+  },
+  async getFindRecommendGoods(){
+    const res = await findRecommendGoodsApi()
+    console.log(res.data)
+    this.setData({
+      recommendGoods: res.data
     })
   }
 })

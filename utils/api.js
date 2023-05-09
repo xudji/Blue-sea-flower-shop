@@ -15,3 +15,11 @@ export const findListGoodsApi = () => {
   return request({
    url:'/mall-api/index/findListGoods'})
 }
+// 人气推荐
+export const findRecommendGoodsApi = () => {
+  return request({
+   url:'/mall-api/index/findRecommendGoods'})
+}
+
+
+

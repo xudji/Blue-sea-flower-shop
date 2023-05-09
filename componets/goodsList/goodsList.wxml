@@ -3,7 +3,8 @@
         {{title}}
      </view>  
      <view class="goodsCard">
-      <goodsCard wx:for="{{goodsList}}" wx:key="id" goodsInfo="{{item}}"  goodsInfo="{{item}}"></goodsCard>
+      <goodsCard wx:for="{{goodsList}}" wx:key="id"   goodsInfo="{{item}}"></goodsCard>
+     
      </view>
       
        <view class="more">
