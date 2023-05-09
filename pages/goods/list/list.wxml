@@ -26,4 +26,5 @@
         <van-button round type="danger" class="bottom-button"  bindtap="checkOther" >查看其他商品</van-button>
 </van-empty>
     </view>
+    <!-- 单独 -->
 </view>
