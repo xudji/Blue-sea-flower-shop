@@ -1,74 +1,23 @@
 <view class="category">
-     <scroll-view class="cate-left" enhanced  	show-scrollbar="{{false}}">
+     <scroll-view class="cate-left" scroll-y="true" show-scrollbar="{{false}}" enhanced="{{true}}">
      <view class="nav-container">
-      <view class="scroll-view-item active"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
-       <view class="scroll-view-item"> 鲜花玫瑰</view>
+     <block wx:for="{{categoryList}}" wx:key="id" >
+      <view class="scroll-view-item {{index === categoryIndex && 'active'}}"   data-id="{{index}}"  bindtap="checkItem">{{item.name}}</view>
+    </block>
      </view>
-     
      </scroll-view>
-       <scroll-view class="cate-right">
+
+
+       <scroll-view class="cate-right" scroll-y="true" show-scrollbar="{{false}}" enhanced="{{true}}" >
             <view class="list-container">
-               <view class="list-title">
-                   爱礼精选
+              <view class="list-title">
+                  {{categoryInfo.name}}
                </view>
                
                <view class="list-content">
-                  <navigator class="cate-item">
-                    <image src="/static/tabbar/home-icon1-1.png" mode=""/>
-                    <text>真情告白</text>
-                  </navigator>
-                  <navigator class="cate-item">
-                    <image src="/static/tabbar/home-icon1-1.png" mode=""/>
-                    <text>真情告白</text>
-                  </navigator>
-                  <navigator class="cate-item">
-                    <image src="/static/tabbar/home-icon1-1.png" mode=""/>
-                    <text>真情告白</text>
-                  </navigator>
-                  <navigator class="cate-item">
-                    <image src="/static/tabbar/home-icon1-1.png" mode=""/>
-                    <text>真情告白</text>
+                  <navigator   url="/pages/goods/list/list?category2Id={{item.id}}"   wx:for="{{categoryInfo.children}}"  wx:key="id"    class="cate-item" >
+                    <image src="{{item.imageUrl}}" mode=""/>
+                    <text>{{item.name}}</text>
                   </navigator>
                </view>
             </view>

@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "goodsCard":"/componets/goodsCard/goodsCard",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "enablePullDownRefresh": true
+}

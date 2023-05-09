@@ -1,5 +1,5 @@
 import config from './config'
-import {toast} from '../../utils/tips'
+import {toast} from './tips'
 export default function ({ url,data={},method="get" }) {
   return new Promise((resolve, reject) => {
     // 异步操作的代码逻辑

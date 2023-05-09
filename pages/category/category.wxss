@@ -1,16 +1,21 @@
 .category{
   display: flex;
   justify-content: space-between;
+  height: 100%;
+
 }
 .cate-left{
     width: 22.5%;
+    height: 100vh;
+    background-color: #eee;
 }
 .scroll-view-item{
   height: 70rpx;
   line-height: 70rpx;
   font-size: 26rpx;
   text-align: center;
-  background-color: #eee;
+ 
+
 }
 .scroll-view-item.active {
   position: relative;
@@ -28,6 +33,8 @@
 }
 .cate-right{
    width: 77.5%;
+   height: 100vh;
+
 }
 .list-container{
 
@@ -39,7 +46,6 @@
 }
 .list-content{
    display: flex;
-   justify-content: space-between;
    flex-wrap: wrap;
 }
 .cate-item{

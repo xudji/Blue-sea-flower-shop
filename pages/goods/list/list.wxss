@@ -1,0 +1,28 @@
+.list-container{
+  background-color: #eee;
+}
+.list-content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.list-content::after{
+  width: 350rpx;
+  content: '';
+}
+
+.list-bottom{
+  background-color: #fff;
+  text-align: center;
+  padding: 15rpx;
+}
+.van-divider{
+  
+}
+.bottom-button {
+  width: 160px;
+  height: 40px;
+ 
+}

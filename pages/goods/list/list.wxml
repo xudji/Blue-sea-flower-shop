@@ -1,0 +1,29 @@
+<view class="list-container">
+   
+  <!-- 有商品 -->
+
+   <block wx:if="{{goodsList.length}}">
+  <view class="list-content" >
+  <view class="list-goods" wx:for="{{goodsList}}" wx:key="id">
+    <goodsCard goodsInfo="{{item}}" ></goodsCard>
+  </view>
+  </view>
+  
+  <!-- 拉到底 -->
+  <view class="list-bottom"  wx:if="{{ page >= pages  }}">
+  <van-divider
+  contentPosition="center"
+  
+>
+  没有更多了
+</van-divider>
+</view>
+</block>
+
+   <!-- 没有商品 -->
+    <view class="list-empty"  wx:else  >
+      <van-empty description="该分类下暂无商品，去看看其他的商品吧">
+        <van-button round type="danger" class="bottom-button"  bindtap="checkOther" >查看其他商品</van-button>
+</van-empty>
+    </view>
+</view>

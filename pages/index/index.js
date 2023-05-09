@@ -39,7 +39,7 @@ Page({
   },
   async getFindRecommendGoods(){
     const res = await findRecommendGoodsApi()
-    console.log(res.data)
+   
     this.setData({
       recommendGoods: res.data
     })

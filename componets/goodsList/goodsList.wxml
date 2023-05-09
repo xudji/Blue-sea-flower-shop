@@ -7,7 +7,7 @@
      
      </view>
       
-       <view class="more">
+       <navigator url="/pages/goods/list/list"  class="more">
              查看更多
-       </view>
+       </navigator>
 </view>

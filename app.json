@@ -3,8 +3,11 @@
     "pages/index/index",
     "pages/category/category",
     "pages/cart/cart",
+    "pages/goods/detail/detail",
+    "pages/goods/list/list",
     "pages/personal/personal"
   ],
+ 
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#9C0211",
@@ -44,6 +47,8 @@
       }
       ]
     },
-  "style": "v2",
+   
   "sitemapLocation": "sitemap.json"
+ 
+  
 }

@@ -1,0 +1,23 @@
+{
+  "name": "blue-sea-flower-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xudji/Blue-sea-flower-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xudji/Blue-sea-flower-shop/issues"
+  },
+  "homepage": "https://github.com/xudji/Blue-sea-flower-shop#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.18"
+  }
+}

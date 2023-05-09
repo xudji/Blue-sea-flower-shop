@@ -3,6 +3,7 @@
   background: #fff;
   margin-bottom: 20rpx;
 }
+
 .goods-image{
   width: 100%;
 }

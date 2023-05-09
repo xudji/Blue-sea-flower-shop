@@ -1,18 +1,50 @@
 // pages/category/category.js
+
+import {findCategoryTreeApi} from '../../utils/api'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+     categoryList:[],
+     categoryIndex:0,
+     categoryInfo:{}
   },
+
+  async getFindCategoryTree(){
+      const res = await findCategoryTreeApi()
+      if(res.code === 200) {
+        console.log(res.data)
+         console.log(res.data[0])
+          this.setData({
+            categoryList:res.data,
+            categoryInfo:res.data[0]  
+          })
+      }
+  },
+  checkItem(e){
+     const res = e.currentTarget.dataset.id
+     console.log(res)
+     this.setData({
+      categoryIndex:res
+    })
+    this.updateCateInfo() 
+  },
+  updateCateInfo(){
+       const {categoryList,categoryIndex} = this.data
+       this.setData({
+        categoryInfo:categoryList[categoryIndex]
+       })
+  },
+ 
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+     this.getFindCategoryTree()
   },
 
   /**

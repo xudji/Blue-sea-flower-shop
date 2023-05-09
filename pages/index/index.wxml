@@ -6,18 +6,16 @@
             <swiper-item>
             <image src="{{item.imageUrl}}" mode=""/>
             </swiper-item>
-            
           </block>
         </swiper>
     </view> 
     <view class="navList"> 
     <block wx:for="{{navList}}" wx:key="id" wx:for-index="index" >
-         <view class="navIcon">
+         <navigator  url="/pages/goods/list/list?category1Id={{item.id}}"    class="navIcon">
           <image class="{{index > 4 ? 'small' : ''}}"   src="{{item.imageUrl}}" mode=""/>
              <text>{{item.name}}</text>
-         </view>
+         </navigator>
         </block>
-       
     </view>
     <view class="banner">
       <image src="{{backgroundImg}}" mode=""/>
