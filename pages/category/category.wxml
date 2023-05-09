@@ -1,2 +1,76 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="category">
+     <scroll-view class="cate-left" enhanced  	show-scrollbar="{{false}}">
+     <view class="nav-container">
+      <view class="scroll-view-item active"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+       <view class="scroll-view-item"> 鲜花玫瑰</view>
+     </view>
+     
+     </scroll-view>
+       <scroll-view class="cate-right">
+            <view class="list-container">
+               <view class="list-title">
+                   爱礼精选
+               </view>
+               
+               <view class="list-content">
+                  <navigator class="cate-item">
+                    <image src="/static/tabbar/home-icon1-1.png" mode=""/>
+                    <text>真情告白</text>
+                  </navigator>
+                  <navigator class="cate-item">
+                    <image src="/static/tabbar/home-icon1-1.png" mode=""/>
+                    <text>真情告白</text>
+                  </navigator>
+                  <navigator class="cate-item">
+                    <image src="/static/tabbar/home-icon1-1.png" mode=""/>
+                    <text>真情告白</text>
+                  </navigator>
+                  <navigator class="cate-item">
+                    <image src="/static/tabbar/home-icon1-1.png" mode=""/>
+                    <text>真情告白</text>
+                  </navigator>
+               </view>
+            </view>
+       </scroll-view>
+</view>
