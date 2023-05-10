@@ -1,26 +1,18 @@
-// pages/personal/personal.js
+// pages/settings/settings.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     userInfo:{}
-  },
 
-  // 1. 登录
-  toLogin(){
-    wx.navigateTo({
-      url: '/pages/login/login',
-    })
   },
-
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-   
+
   },
 
   /**
@@ -34,24 +26,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    let userInfo = wx.getStorageSync('userInfo')
-     if(userInfo){
-       this.setData({
-        userInfo:JSON.parse(userInfo)
-       })
-     }
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
+
   },
 
   /**

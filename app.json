@@ -6,7 +6,9 @@
     "pages/login/login",
     "pages/goods/detail/detail",
     "pages/goods/list/list",
-    "pages/personal/personal"
+    "pages/personal/personal",
+    "pages/settings/settings",
+    "pages/profile/profile"
   ],
  
   "window": {

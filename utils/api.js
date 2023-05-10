@@ -33,9 +33,9 @@ export const goodsListApi = ({page,limit,...rest}) => {
 }
 
 // 登录接口
-export const loginApi = () => {
+export const loginApi = (code) => {
   return request({
-   url:'/mall-api/weixin/login'})
+   url:`/mall-api/weixin/wxLogin/${code}`})
 }
 
 

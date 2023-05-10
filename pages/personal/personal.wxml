@@ -7,8 +7,9 @@
   <view class="wrap">
     <view class="user-container section">
       <image src="{{userInfo.headimgurl?userInfo.headimgurl: '/static/images/1.png'}}"></image>
-      <text class="ellipsis" wx:if="{{userInfo.nickname}}">建工高启强</text>
+      <text class="ellipsis" wx:if="{{userInfo.nickName}}">{{userInfo.nickName}}</text>
       <text class="ellipsis" wx:else bindtap='toLogin'>请登陆</text>
+      <navigator url="../settings/settings">设置</navigator>
     </view>
     <view class="order section">
       <view class="order-title-wrap">
