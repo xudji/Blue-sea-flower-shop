@@ -8,7 +8,10 @@
     "pages/goods/list/list",
     "pages/personal/personal",
     "pages/settings/settings",
-    "pages/profile/profile"
+    "pages/profile/profile",
+     "pages/order/detail/detail"
+  
+    
   ],
  
   "window": {

@@ -47,9 +47,28 @@ export const getuserInfoApi = () => {
 }
 
 // 更新用户信息
-export const updateUserApi = () => {
+export const updateUserApi = (userInfo) => {
   return request({
-   url:'/mall-api/weixin/updateUser'})
+    url: `/mall-api/weixin/updateUser`,
+    method: 'post',
+    data: userInfo
+  })
+}
+// 获取商品详情数据信息
+export const reqGetGoodsDetailInfoApi = (goodsId) => {
+  return request({ url:`/mall-api/goods/${goodsId}`})
+}
+
+// 添加购物车商品
+export const addToCartApi = ({goodsId,count,blessing}) => {
+  return request({ url:`/mall-api/cart/addToCart/${goodsId}/${count}`, data:{blessing}}) // data 是个对象 固定写法
+}
+
+// 获取购物车数据
+
+export const getCartListApi = () => {
+  return request({
+   url:`/mall-api/cart/getCartList`})
 }
 
 

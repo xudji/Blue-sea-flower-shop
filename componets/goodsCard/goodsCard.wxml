@@ -1,6 +1,6 @@
 <!--componets/cardList/cardItem.wxml-->
 
-<navigator url=""class="goodsCard" >
+<navigator  url="/pages/goods/detail/detail?goodsId={{goodsInfo.id}}" class="goodsCard" >
   <view class="goods-image">
       <image src="{{goodsInfo.imageUrl}}" mode=""/>
   </view>

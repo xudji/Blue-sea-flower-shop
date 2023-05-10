@@ -30,7 +30,7 @@ export default function ({ url,data={},method="get" }) {
       fail: (err) => {
         // 将 Promise 对象标记为失败状态，并传递错误信息
         wx.hideLoading();
-        toast('加载失败！')
+       
         reject(err)
       }
     })

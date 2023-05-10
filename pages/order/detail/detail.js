@@ -1,28 +1,17 @@
-import { getCartListApi } from '../../utils/api'
-
-
+// pages/order/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     cartList:[]
+
   },
 
-  
-  // 获取购物车列表
-  async getCartList(){
-     const res = await getCartListApi()
-     if(res.code === 200) {
-       this.setData({
-         cartList:res.data
-       })
-     }
-  }, 
-
+  /**
+   * 生命周期函数--监听页面加载
+   */
   onLoad(options) {
-    this.getCartList()
 
   },
 
