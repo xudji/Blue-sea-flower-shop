@@ -32,6 +32,29 @@ export const goodsListApi = ({page,limit,...rest}) => {
    url:`/mall-api/goods/list/${page}/${limit}`,data:rest})
 }
 
+// 登录接口
+export const loginApi = () => {
+  return request({
+   url:'/mall-api/weixin/login'})
+}
+
+
+
+// 获取登录用户信息
+export const getuserInfoApi = () => {
+  return request({
+   url:'/mall-api/weixin/getuserInfo'})
+}
+
+// 更新用户信息
+export const updateUserApi = () => {
+  return request({
+   url:'/mall-api/weixin/updateUser'})
+}
+
+
+
+
 
 
 

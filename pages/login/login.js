@@ -1,21 +1,30 @@
-// pages/personal/personal.js
+
+import {loginApi,getuserInfoApi,updateUserApi} from '/utils/api'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     userInfo:{}
-  },
 
-  // 1. 登录
-  toLogin(){
-    wx.navigateTo({
-      url: '/pages/login/login',
+  },
+  getUserProfile(){
+    wx.login({
+      success (res) {
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'https://example.com/onLogin',
+            data: {
+              code: res.code
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
     })
   },
-
-
   /**
    * 生命周期函数--监听页面加载
    */

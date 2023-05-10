@@ -1,1 +1,19 @@
 /**app.wxss**/
+
+  page {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex_c {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .total_flex {
+    display: flex;
+  }
